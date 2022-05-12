@@ -1,4 +1,5 @@
 import styles from '../styles/Newuser.module.scss';
+import {NewUser} from '../components/Form/NewUser'
 import Head from 'next/head';
 
 export default function Newuser() {
@@ -9,9 +10,9 @@ export default function Newuser() {
             Novo Usuario
           </title>
         </Head>
-        <div>
-          <h1 className={styles.title}>Novo Usuario</h1>
-        </div>
+        <>
+          <NewUser/>
+        </>
       </>
     )
   }

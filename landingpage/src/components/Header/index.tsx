@@ -2,8 +2,8 @@ import styles from './styles.module.scss';
 
 export function Header(){
     return(
-        <header>
-            <div>
+        <header className={styles.headerContainer}>
+            <div className={styles.headerMenuNav}>
                 <img src='/images/logo.svg' alt='logo Exchange'/>
                 <a>Home</a>
             </div>
