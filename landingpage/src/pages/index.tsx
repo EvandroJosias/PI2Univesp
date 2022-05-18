@@ -1,8 +1,10 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button } from 'reactstrap';
 
 export default function Home() {
   return (
     <div>
-      <h1>Iniciando Projeto</h1>
+        <Button color="danger">Abra sua conta</Button>
     </div>
   )
 }

@@ -1,17 +1,41 @@
 .headerContainer{
-    height: 10em;
-    background-color: rgb(199, 199, 199);
+    height: 1rem;
+    margin: 1rem;
 }
 
 .headerMenuNav{
     max-width: 1120px;
-    height: 10rem;
+    height: 11rem;
     margin: 0 auto;
     display: flex;
     align-items: center;
 
     img{
         cursor: pointer;
+        margin-top: 4rem;
+    }
+
+    nav{
+        margin-left: 5rem;
+        height: 11rem;
+
+        a{
+            display: inline-block;
+            position: relative;
+            padding: 0 0.5rem;
+            height: 5rem;
+            line-height: 5rem;
+            color: black;
+            & + a{
+                margin-left: 20rem;
+            }
+        }
+
+    }
+
+    button{
+        margin-left: auto;
+        background-color: rgb(189, 24, 24);
     }
 
 }

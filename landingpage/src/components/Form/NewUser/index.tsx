@@ -1,91 +1,266 @@
 import styles from './styles.module.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { FormGroup } from 'reactstrap';
+import { Label } from 'reactstrap';
+import { Input } from 'reactstrap';
+import { Form } from 'reactstrap';
+import { Row } from 'reactstrap';
+import { Col } from 'reactstrap';
+
 
 export function NewUser(){
     return(
         <div>
-            <form>
-                <div>
-                <label>Nome Completo</label>
-                <input type="text" id="name" name="name" required/>
-                </div>
-                <div>
-                <label>Nome Social_Apelido</label>
-                <input type="text" id="nickname" name="nickname" required/>
-                </div>
-                <div>
-                <label>Nascimento</label>
-                <input type="text" id="birthday" name="birthday" required/>
-                </div>
-                <div>
-                <label>CPF</label>
-                <input type="text" id="cpf" name="cpf" required/>
-                </div>
-                <div>
-                <label>Endereço</label>
-                <input type="text" id="address" name="address" required/>
-                </div>
-                <div>
-                <label>Numero</label>
-                <input type="text" id="number" name="number" required/>
-                </div>
-                <div>
-                <label>Complemento</label>
-                <input type="text" id="adicional" name="adicional" required/>
-                </div>
-                <div>
-                <label>CEP</label>
-                <input type="text" id="cep" name="cep" required/>
-                </div>
-                <div>
-                <label>Cidade</label>
-                <input type="text" id="city" name="city" required/>
-                </div>
-                <div>
-                <label>Estado</label>
-                <input type="text" id="state" name="state" required/>
-                </div>
-                <div>
-                <label>Pais</label>
-                <input type="text" id="country" name="country" required/>
-                </div>
-                <div>
-                <label>Email de Contato</label>
-                <input type="text" id="email" name="email" required/>
-                </div>
-                <div>
-                <label>Telefone Fixo</label>
-                <input type="text" id="phone" name="phone" required/>
-                </div>
-                <div>
-                <label>Telefone Celular </label>
-                <input type="text" id="cellphone" name="cellphone" required/>
-                </div>
-                <div>
-                <label>Telefone Whatsapp </label>
-                <input type="text" id="whatsapp" name="whatsapp" required/>
-                </div>
-                <div>
-                <label>Termo de Aceite Plataforma </label>
-                <input type="text" id="plataformterm" name="plataformterm" required/>
-                </div>
-                <div>
-                <label>Termo de Aceite LGPD </label>
-                <input type="text" id="lgpdterm" name="lgpdterm" required/>
-                </div>
-                <div>
-                <label>Termo de Aceite Contato Whatsapp</label>
-                <input type="text" id="whatsappterm" name="whatsappterm" required/>
-                </div>
-                <div>
-                <label>Termo de Aceite Contato Telefone</label>
-                <input type="text" id="phoneterm" name="phoneterm" required/>
-                </div>
-                <div>
-                <label>Termo de Aceite Contato Email</label>
-                <input type="text" id="emailterm" name="emailterm" required/>
-                </div>
-                <input type="submit"/>
-            </form>
+            <Form>
+                <Row>
+                    <Col md={12}>
+                        <FormGroup>
+                            <Label for="NomeCompleto">
+                                Nome Completo
+                            </Label>
+                            <Input
+                            id="name"
+                            name="name"
+                            placeholder="Informe seu nome completo"
+                            />
+                        </FormGroup>
+                        </Col>
+                </Row>
+                <Row>
+                    <Col md={5}>
+                        <FormGroup>
+                            <Label for="NomeSocial">
+                                Nome Social
+                            </Label>
+                            <Input
+                            id="nickname"
+                            name="nickname"
+                            placeholder="Como deseja ser chamado(a)?"
+                            />
+                        </FormGroup>
+                    </Col>
+                    <Col md={3}>
+                        <FormGroup>
+                            <Label for="Nascimento">
+                            Nascimento
+                            </Label>
+                            <Input
+                            id="birthday"
+                            name="birthday"
+                            placeholder="Informe quando você nasceu"
+                            type="date"
+                            />
+                        </FormGroup>
+                    </Col>
+                    <Col md={4}>
+                        <FormGroup>
+                            <Label for="CPF">
+                            CPF
+                            </Label>
+                            <Input
+                            id="cpf"
+                            name="cpf"
+                            placeholder="Informe seu CPF (Somente Numeros)"
+                            type="number"
+                            />
+                        </FormGroup>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={1}>
+                        <FormGroup>
+                            <Label for="CEP">
+                            CEP
+                            </Label>
+                            <Input
+                            id="cep"
+                            name="cep"
+                            />
+                        </FormGroup>
+                    </Col>
+                    <Col md={5}>
+                        <FormGroup>
+                            <Label for="Endereco">
+                            Endereço
+                            </Label>
+                            <Input
+                            id="address"
+                            name="address"
+                            placeholder="Ex: Rua Edson Arantes do Nascimento"
+                            />
+                        </FormGroup>
+                    </Col>
+                    <Col md={1}>
+                        <FormGroup>
+                            <Label for="Numero">
+                            Numero
+                            </Label>
+                            <Input
+                            id="number"
+                            name="number"
+                            type="number"
+                            />
+                        </FormGroup>
+                    </Col>
+                    <Col md={2}>
+                        <FormGroup>
+                            <Label for="Complemento">
+                            Complemento
+                            </Label>
+                            <Input
+                            id="adicional"
+                            name="adicional"
+                            placeholder="Ex: Apto 7"
+                            />
+                        </FormGroup>
+                    </Col>
+                    <Col md={2}>
+                        <FormGroup>
+                            <Label for="Cidade">
+                            Cidade
+                            </Label>
+                            <Input
+                            id="city"
+                            name="city"
+                            />
+                        </FormGroup>
+                    </Col>
+                    <Col md={1}>
+                        <FormGroup>
+                            <Label for="UF">
+                            UF
+                            </Label>
+                            <Input
+                            id="state"
+                            name="state"
+                            />
+                        </FormGroup>
+                    </Col>
+                </Row>    
+                <Row>
+                    <Col md={12}>
+                        <FormGroup>
+                            <Label for="Email">
+                            Email
+                            </Label>
+                            <Input
+                            id="email"
+                            name="email"
+                            />
+                        </FormGroup>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={3}>
+                        <FormGroup>
+                            <Label for="TelefoneFixo">
+                            Telefone Fixo
+                            </Label>
+                            <Input
+                            id="phone"
+                            name="phone"
+                            />
+                        </FormGroup>
+                    </Col>
+                    <Col md={3}>
+                        <FormGroup>
+                            <Label for="TelefoneCelular">
+                            Telefone Celular
+                            </Label>
+                            <Input
+                            id="cellphone"
+                            name="cellphone"
+                            />
+                        </FormGroup>
+                    </Col>
+                <Row>
+
+                </Row>
+                <Col md={12}>
+                    <FormGroup check>
+                        <Input
+                        id="plataformterm"
+                        name="plataformterm"
+                        type="checkbox"
+                        />
+                        <Label
+                        check
+                        for="Aceite Plataforma"
+                        >
+                        Aceite Plataforma
+                        </Label>
+                    </FormGroup>
+                </Col>
+                </Row>
+                <Row>
+                <Col md={12}>
+                    <FormGroup check>
+                        <Input
+                        id="lgpdterm"
+                        name="lgpdterm"
+                        type="checkbox"
+                        />
+                        <Label
+                        check
+                        for="Aceite LGPD"
+                        >
+                        Aceite LGPD
+                        </Label>
+                    </FormGroup>
+                </Col>
+                </Row> 
+                <Row>
+                <Col md={12}>
+                    <FormGroup check>
+                        <Input
+                        id="whatsappterm"
+                        name="whatsappterm"
+                        type="checkbox"
+                        />
+                        <Label
+                        check
+                        for="Aceite Contato Whatsapp"
+                        >
+                        Aceite Contato Whatsapp
+                        </Label>
+                    </FormGroup>
+                </Col>
+                </Row> 
+                <Row>
+                <Col md={12}>
+                    <FormGroup check>
+                        <Input
+                        id="phoneterm"
+                        name="phoneterm"
+                        type="checkbox"
+                        />
+                        <Label
+                        check
+                        for="Aceite Contato Telefone"
+                        >
+                        Aceite Contato Telefone
+                        </Label>
+                    </FormGroup>
+                </Col>
+                </Row> 
+                <Row>
+                <Col md={12}>
+                    <FormGroup check>
+                        <Input
+                        id="emailterm"
+                        name="emailterm"
+                        type="checkbox"
+                        />
+                        <Label
+                        check
+                        for="Aceite Contato Email"
+                        >
+                        Aceite Contato Email
+                        </Label>
+                    </FormGroup>
+                </Col>
+                </Row> 
+            </Form>
         </div>
     )
 }
