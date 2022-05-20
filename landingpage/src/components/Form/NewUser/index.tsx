@@ -1,5 +1,7 @@
 import styles from './styles.module.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Link from 'next/link';
+
 import { CardFooter} from 'reactstrap';
 import { Label } from 'reactstrap';
 import { Input } from 'reactstrap';
@@ -282,6 +284,11 @@ export function NewUser(){
                     <Button className={styles.buttonsubmit}>
                         Enviar
                     </Button>
+                    <Link href='/'>
+                      <Button className={styles.buttonsubmit}>
+                        Cancelar
+                      </Button>
+                    </Link>
                 </CardFooter>
             </Card> 
 

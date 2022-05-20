@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+    app:
+        stdin_open: true
+        build: .
+        image: appusers
+        container_name: appusers
+        ports:
+            - "3000:3000"
+        volumes:
+            - "./landingpage:/workdir/landingpage"
+        environment:
+            - CHOKIDAR_USEPOLLING=true
+        command: yarn dev            
