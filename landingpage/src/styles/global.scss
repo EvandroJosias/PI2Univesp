@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,7 +17,7 @@
     }
 }
 
-body{
+body {
     background: #F2F6FC;
 }
 
@@ -25,11 +25,11 @@ body, input, textarea, select, button{
     font: 400 1rem sans-serif; //1rem = 16px
 }
 
-button{
+button {
     cursor: pointer;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }

@@ -1,51 +1,60 @@
-.cardcenterposition{
-    height: 1rem;
-    margin: 1rem;
+.card_main_container {
+    max-width: 500px;
+    min-height: 10rem;
+    margin-top: 1%;
+    background-color: lightgray;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+.card_size_medium {
+    width: 50%;
+}
+
+.card_title {
+    min-height: 2rem;
+    text-align: center;    
+    font-weight: bold;
+    color: white;
+    background-color: rgb(43, 42, 42);
+    border-radius: 10px;
+}
+
+.card_with_button {
+    min-height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;    
+    font-weight: bold;
+    color: white;
+    background-color: rgb(43, 42, 42);
+    border-radius: 10px;
+    button {
+        width: 150px;
+    }
+    align:botton;
+}
+
+.all_button {
+    color: gray;
+    padding: 15px 32px;
+    margin: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+} 
+
+
+.cardformbackposition{
     margin-left: 10rem;
     margin-right: 10rem;
     margin-top: 13rem;
-    background-color: lightgray;
 }
 
-.headerContainer{
-    height: 1rem;
-    margin: 1rem;
-}
-
-.headerMenuNav{
-    max-width: 1120px;
-    height: 11rem;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-
-    img{
-        cursor: pointer;
-        margin-top: 4rem;
-        
-    }
-
-    nav{
-        margin-left: 5rem;
-        height: 11rem;
-
-        a{
-            display: inline-block;
-            position: relative;
-            padding: 0 0.5rem;
-            height: 5rem;
-            line-height: 5rem;
-            color: black;
-            & + a{
-                margin-left: 20rem;
-            }
-        }
-
-    }
-
-    button{
-        margin-left: auto;
-        background-color: rgb(189, 24, 24);
-    }
-
+.buttonsubmit{
+    text-align: right;
+    background-color: green;
 }

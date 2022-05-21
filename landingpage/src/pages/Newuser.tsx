@@ -1,4 +1,4 @@
-import styles from '../styles/Newuser.module.scss';
+//import styles from '../styles/Newuser.module.scss';
 import {NewUser} from '../components/Form/NewUser'
 import Head from 'next/head';
 

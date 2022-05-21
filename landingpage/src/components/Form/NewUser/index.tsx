@@ -1,5 +1,6 @@
-import styles from './styles.module.scss';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
+import styles from '../../../styles/cards.module.scss';
+//import 'bootstrap/dist/css/bootstrap.min.css';
 import Link from 'next/link';
 
 import { CardFooter} from 'reactstrap';
@@ -21,7 +22,7 @@ import { FormGroup } from 'reactstrap';
 export function NewUser(){
     return(
         <div>
-            <Card className={styles.cardformbackposition}>
+            <Card className={styles.card_main_container}>
                 <CardHeader>
                     Cadastro
                 </CardHeader>
@@ -280,12 +281,12 @@ export function NewUser(){
                         </Row> 
                     </Form>
                 </CardBody>
-                <CardFooter>
-                    <Button className={styles.buttonsubmit}>
+                <CardFooter className={styles.card_with_button}>
+                    <Button className={styles.all_button}>
                         Enviar
                     </Button>
                     <Link href='/'>
-                      <Button className={styles.buttonsubmit}>
+                      <Button className={styles.all_button}>
                         Cancelar
                       </Button>
                     </Link>

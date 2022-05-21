@@ -1,15 +1,11 @@
-import styles from './styles.module.scss';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button } from 'reactstrap';
-
+import styles from '../../styles/forms.module.scss';
 
 export function Header(){
     return(
-        <header className={styles.headerContainer}>
-            <div className={styles.headerMenuNav}>
-                <img src='/images/logo200x200.svg' alt='logo Exchange'/>
-            </div>
-            
+        <header className={styles.header_container}>
+            {/* <div className={styles.headerMenuNav}>
+                <img src='/images/logo200x100.png' alt='logo Exchange'/>
+            </div>             */}
         </header>
     )
 }

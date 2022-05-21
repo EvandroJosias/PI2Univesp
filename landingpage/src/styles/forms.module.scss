@@ -1,19 +1,24 @@
-.headerContainer{
-    height: 1rem;
-    margin: 1rem;
+.header_container {
+    width: 100%;
+    height: 10vh;
+    // margin: 1%;
+//    position: absolute;
+    background-color: black;
 }
 
 .headerMenuNav{
-    max-width: 1120px;
-    height: 11rem;
+
+    height: auto;
     margin: 0 auto;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
 
-    img{
+    img {
         cursor: pointer;
-        margin-top: 4rem;
-        
+        max-width: 100%;
+        max-height: 100%;        
+        margin-top: 1rem;
+//        max-height: 50vh;
     }
 
     nav{
