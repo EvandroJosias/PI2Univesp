@@ -1,7 +1,8 @@
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from '../../../styles/cards.module.scss';
-//import 'bootstrap/dist/css/bootstrap.min.css';
 import Link from 'next/link';
+
+import '../../validateMask';
 
 import { CardFooter} from 'reactstrap';
 import { Label } from 'reactstrap';
@@ -21,10 +22,10 @@ import { FormGroup } from 'reactstrap';
 
 export function NewUser(){
     return(
-        <div>
-            <Card className={styles.card_main_container}>
-                <CardHeader>
-                    Cadastro
+        <div className={styles.geral_container}>
+            <Card className={styles.card_fullsize_container}>
+                <CardHeader className={styles.card_title}>
+                    <span className={styles.text_title}>Cadastro Novo Usuário</span>
                 </CardHeader>
                 <CardBody>
                     <CardTitle tag="h5">
@@ -173,22 +174,29 @@ export function NewUser(){
                             <Col md={3}>
                                 <FormGroup>
                                     <Label for="TelefoneFixo">
-                                    Telefone Fixo
+                                        Telefone Fixo
                                     </Label>
                                     <Input
-                                    id="phone"
-                                    name="phone"
+                                        id="phone"
+                                        name="phone"
+                                        type="text" 
+                                        pattern="^\([1-9]{2}\)[0-9]{4}\-[0-9]{4}$"
                                     />
                                 </FormGroup>
                             </Col>
                             <Col md={3}>
                                 <FormGroup>
                                     <Label for="TelefoneCelular">
-                                    Telefone Celular
+                                        Telefone Celular
                                     </Label>
                                     <Input
-                                    id="cellphone"
-                                    name="cellphone"
+                                        required id="cellphone"
+                                        name="cellphone"
+                                        type="text" 
+                                        onblur="mask_Phone(this)"
+                                        onfocus="cut_Hifen(this)"
+                                        placeholder="(99)99999-9999"
+                                        pattern="^\([1-9]{2}\)[0-9]{4}\-[0-9]{4}$"
                                     />
                                 </FormGroup>
                             </Col>
@@ -282,17 +290,14 @@ export function NewUser(){
                     </Form>
                 </CardBody>
                 <CardFooter className={styles.card_with_button}>
-                    <Button className={styles.all_button}>
-                        Enviar
-                    </Button>
                     <Link href='/'>
-                      <Button className={styles.all_button}>
-                        Cancelar
-                      </Button>
+                        <Button classename={styles.all_button}>Enviar</Button>
                     </Link>
+                    <Link href='/'>
+                        <Button classename={styles.all_button}>Cancelar</Button>
+                    </Link>                    
                 </CardFooter>
             </Card> 
-
         </div>
     )
 }

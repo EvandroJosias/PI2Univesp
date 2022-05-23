@@ -1,12 +1,12 @@
+import {Login} from '../components/Form/Login';
 import Head from 'next/head';
-import {Login} from '../components/Form/Login'
 
-export default function Newuser() {
+export default function login() {
     return (
       <>
         <Head>
           <title>
-            Novo Usuario
+            Login
           </title>
         </Head>
         <>

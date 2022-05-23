@@ -8,8 +8,11 @@ services:
         container_name: appusers
         ports:
             - "3000:3000"
+            - "3001:3001"
         volumes:
-            - "./landingpage:/workdir/landingpage"
+            - "./landingpage:/opt/app"
+            - "/opt/app/node_modules"
+            - "/opt/app/.next"
         environment:
             - CHOKIDAR_USEPOLLING=true
-        command: yarn dev            
+        #command: yarn dev            

@@ -1,25 +1,53 @@
+
+.geral_container {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center    
+}
+
 .card_main_container {
     max-width: 500px;
-    min-height: 10rem;
     margin-top: 1%;
-    background-color: lightgray;
     border-style: solid;
     border-color: black;
     border-width: 2px;
     border-radius: 10px;
 }
 
-.card_size_medium {
-    width: 50%;
+.card_fullsize_container {
+    width: 100vw;
+    margin: 2%;
+    margin-top: 1%;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 10px;    
 }
 
 .card_title {
+    margin: 0px;
     min-height: 2rem;
     text-align: center;    
     font-weight: bold;
-    color: white;
-    background-color: rgb(43, 42, 42);
-    border-radius: 10px;
+    color: black;
+    background: darkturquoise;
+}
+
+.text_title{
+    // color:white;
+    // background: rgb(43, 42, 42);
+    font-size:1.5rem;
+}
+
+.card_information {
+    width: 100%;
+    min-height: 10rem;
+    background: white;
+    font-weight: bold;
+    text-align: justify;
 }
 
 .card_with_button {
@@ -27,26 +55,28 @@
     display: flex;
     justify-content: space-between;
     text-align: center;    
-    font-weight: bold;
-    color: white;
-    background-color: rgb(43, 42, 42);
-    border-radius: 10px;
+    background: darkturquoise;
     button {
+        height: 40px;
         width: 150px;
+        margin:10px;
+        border-radius: 10px;
+        font-weight: bold;
+        background-color:gray;
+        color: black;
     }
-    align:botton;
 }
 
 .all_button {
-    color: gray;
     padding: 15px 32px;
     margin: 30px;
+    display: inline-block;    
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
+    background-color:gray;
+    color: black;    
 } 
-
 
 .cardformbackposition{
     margin-left: 10rem;
