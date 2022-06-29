@@ -4,6 +4,10 @@ import { Card, CardHeader, CardFooter, CardBody, Button } from 'reactstrap';
 import { Form, FormGroup, Row, Col, Input, Label } from 'reactstrap';
 import Link from 'next/link';
 
+function testfunc( ){
+   alert('teste de função');
+}
+
 export function Login(){
     return(
         <div  className={styles.geral_container}>
@@ -46,7 +50,7 @@ export function Login(){
                     </Form>          
                 </CardBody>
                 <CardFooter className={styles.card_with_button}>
-                    <Link href='/'>
+                    <Link href='/' onClick={ () => { alert("redirecting to teste")} } >
                         <Button classename={styles.all_button}>Confirmar</Button>
                     </Link>
                     <Link href='/'>

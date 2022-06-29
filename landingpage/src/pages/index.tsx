@@ -22,7 +22,7 @@ export default function Home() {
           <Link href='/Newuser'>
             <Button classename={styles.all_button}>Abra sua conta</Button>
           </Link>
-          <Link href='/login'>
+          <Link href='/Login'>
             <Button classename={styles.all_button}>Login</Button>
           </Link>                    
         </CardFooter>
